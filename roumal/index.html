@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roumal Amenagement</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: url('bg.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; 
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px; 
+      text-align: center;
+      min-height: 100%;
+      padding: 20px;
+    }
+
+    .roumal {
+      max-width: 200px; 
+      width: 90%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .coming-soon-container {
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1px; 
+    }
+
+    .coming-soon-img {
+      max-width: 700px; 
+      width: 90%;
+      height: auto;
+    }
+
+    .down-arrow {
+      width: 100px;
+      height: auto;
+      animation: bounce 1.5s infinite;
+      margin-bottom: 0%;
+    }
+
+    .get-free-guide-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0px; 
+    }
+
+    .get-free-guide {
+      max-width: 150px; 
+      height: auto;
+      margin-top: 1px;
+    }
+
+    .hand {
+      max-width: 200px; 
+      height: auto;
+      margin-left: 0%;
+    }
+
+   
+    .social-icons {
+      display: flex;  
+      justify-content: flex-start;  
+      align-items: center;  
+      gap: 0px;  
+      position: fixed;  
+      bottom: 10px;  
+      left: 60px;  
+      transform: translateY(0); 
+    }
+
+    .social-icons a img {
+      width: 50px;  
+      height: auto;
+      opacity: 0.8;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .social-icons a img:hover {
+      transform: scale(1.5);  
+      opacity: 1;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+  
+    @media (max-width: 700px) {
+      .roumal {
+        max-width: 135px; 
+        margin-top: -120px;
+        margin-bottom: 50px;
+      }
+
+      .coming-soon-img {
+        max-width: 300px; 
+        margin-bottom: 5px; 
+        margin-top: -30px;  
+      }
+
+      .down-arrow {
+        width: 60px;
+        margin-top: 0px; 
+      }
+
+      .get-free-guide {
+        max-width: 80px; 
+        margin-top: 0px; 
+      }
+
+      .hand {
+        max-width: 130px; 
+        margin-top: -5px; 
+      }
+
+      .social-icons {
+        display: flex;  
+        justify-content: center; 
+        align-items: center;  
+        gap: -5px;  
+        position: fixed;  
+        bottom: 10px;  
+        left: 50%;  
+        transform: translateX(-50%);  
+      }
+
+      .social-icons a img {
+        width: 30px;  
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="roumal" src="Logo.png" alt="Logo of Roumal Amenagement">
+
+    <div class="coming-soon-container">
+      <img class="coming-soon-img" src="ComingSoon.png" alt="Coming Soon">
+    </div>
+
+    <img class="down-arrow" src="DownArrow.png" alt="Down Arrow">
+
+    <div class="get-free-guide-container">
+      <img class="get-free-guide" src="GetFreeGuide.png" alt="Get Your Free Guide">
+      <img class="hand" src="Hand.png" alt="Hand Icon">
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.whatsapp.com" target="_blank" aria-label="WhatsApp">
+        <img src="Whatsapp.png" alt="WhatsApp Icon">
+      </a>
+      <a href="mailto:example@example.com" aria-label="Email">
+        <img src="Email.png" alt="Email Icon">
+      </a>
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+        <img src="Instagram.png" alt="Instagram Icon">
+      </a>
+      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+        <img src="Facebook.png" alt="Facebook Icon">
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+        <img src="LinkedIn.png" alt="LinkedIn Icon">
+      </a>
+      <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+        <img src="TikTok.png" alt="TikTok Icon">
+      </a>
+    </div>
+  </div>
+</body>
+</html>
